@@ -1,0 +1,106 @@
+# ==============================
+# Environment variables & secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Local development & agent config
+# ==============================
+.local/
+.agents/
+# agents/
+
+# ==============================
+# Python cache & compiled files
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==============================
+# Virtual environments
+# ==============================
+.venv/
+venv/
+env/
+
+# ==============================
+# Python build artifacts
+# ==============================
+build/
+dist/
+wheels/
+*.egg-info/
+
+# ==============================
+# Python testing & tooling
+# ==============================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# Frontend dependencies
+# ==============================
+node_modules/
+
+# ==============================
+# Frontend build outputs
+# ==============================
+frontend/dist/
+frontend/build/
+
+# ==============================
+# Model files & large datasets
+# Review before enabling these rules
+# ==============================
+# *.pt
+# *.pth
+# *.onnx
+# *.joblib
+# *.pkl
+models\cf_model.pkl
+models\cb_model.pkl
+
+# ==============================
+# Logs & temporary files
+# ==============================
+*.log
+timing_log.txt
+*.tmp
+*.swp
+
+# ==============================
+# OS-generated files
+# ==============================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# IDE settings
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# Archives & installers
+# ==============================
+*.tar.gz
+*.zip
+*.msi
+
+# ==============================
+# Local Python version
+# ==============================
+# Keep .python-version tracked if needed
+
+
+# ==============================
+# Documentation and Files
+# ==============================
+MovieHub_Documentation.docx

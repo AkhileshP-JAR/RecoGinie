@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecoGenie 🧞</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Profile -->
+        <aside class="sidebar">
+            <h1 class="logo" style="font-size: 1.2rem;">RecoGenie 🧞</h1>
+            <div class="profile-section">
+                <h3>User Profile</h3>
+                <label for="userIdInput">User ID:</label>
+                <input type="text" id="userIdInput" value="12345">
+                <button id="loadProfileBtn" class="btn">Load Profile</button>
+                <div class="user-info">
+                    <p>
+                        <strong>Likes:</strong>
+                        <span id="userPreferences">No preferences yet. Start chatting!</span>
+                        <input type="text" id="editPreferencesInput"
+                            style="display: none; width: 100%; margin-top: 5px;" />
+                    </p>
+                    <div class="pref-actions" style="margin-top: 10px;">
+                        <button id="editPrefBtn" class="btn" style="padding: 5px 10px; font-size: 0.8rem;">Edit</button>
+                        <button id="savePrefBtn" class="btn btn-primary"
+                            style="display: none; padding: 5px 10px; font-size: 0.8rem;">Save</button>
+                        <button id="cancelPrefBtn" class="btn"
+                            style="display: none; padding: 5px 10px; font-size: 0.8rem;">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="getRecsBtn" class="btn btn-accent">Get Recommendations</button>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <div class="chat-header">
+                <h2>AI Agent Chat</h2>
+                <p>Talk to the agent about your favorite movies.</p>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                <div class="message system">
+                    <div class="bubble">Hi there! I am your AI Cinema Assistant. Tell me what movies or genres you like!
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="chatInput" placeholder="E.g., I love sci-fi thrillers like Inception..."
+                    autocomplete="off">
+                <button id="sendBtn" class="btn btn-primary">Send</button>
+            </div>
+        </main>
+
+        <!-- Recommendations Panel -->
+        <aside class="recs-panel">
+            <h2>Recommendations</h2>
+            <div id="recsList" class="recs-list">
+                <p class="placeholder-text">Ask the Assistant to get recommendations, or click 'Get Recommendations'.
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
